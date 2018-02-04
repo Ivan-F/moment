@@ -20,6 +20,9 @@ permalink_defaults:
 # Directory
 source_dir:         source
 public_dir:         public
+tag_dir:            tags
+archive_dir:        archives
+category_dir:       categories
 i18n_dir:           :lang
 skip_render:
 
@@ -68,7 +71,19 @@ pagination_dir:     page
 # Extensions
 ## Plugins:         https://hexo.io/plugins/
 ## Themes:          https://hexo.io/themes/
-theme:              hollow
+theme:              brewski  # hollow
+
+theme_config:
+  copyright:
+    since:          2016
+    name:           Ivan-F
+    url:            http://just-do.cn/moment
+  menu:
+    Home:           /
+    网易云音乐:          http://music.163.com/#/user/home?id=84602576
+    GitHub:         https://github.com/Ivan-F/
+    About:          /about
+
 
 # Deployment
 ## Docs:            https://hexo.io/docs/deployment.html
@@ -76,4 +91,3 @@ deploy:
   type:             git
   repo:             https://github.com/Ivan-F/moment.git
   branch:           gh-pages
-
